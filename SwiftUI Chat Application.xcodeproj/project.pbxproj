@@ -14,6 +14,8 @@
 		C93FC68C2B685B38000D37EB /* SwiftUI_Chat_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC68B2B685B38000D37EB /* SwiftUI_Chat_ApplicationTests.swift */; };
 		C93FC6962B685B38000D37EB /* SwiftUI_Chat_ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6952B685B38000D37EB /* SwiftUI_Chat_ApplicationUITests.swift */; };
 		C93FC6982B685B38000D37EB /* SwiftUI_Chat_ApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6972B685B38000D37EB /* SwiftUI_Chat_ApplicationUITestsLaunchTests.swift */; };
+		C93FC6AB2B685C14000D37EB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6AA2B685C14000D37EB /* LoginView.swift */; };
+		C93FC6AD2B685C21000D37EB /* RegisterionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6AC2B685C21000D37EB /* RegisterionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		C93FC6912B685B38000D37EB /* SwiftUI Chat ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI Chat ApplicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93FC6952B685B38000D37EB /* SwiftUI_Chat_ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Chat_ApplicationUITests.swift; sourceTree = "<group>"; };
 		C93FC6972B685B38000D37EB /* SwiftUI_Chat_ApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Chat_ApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C93FC6AA2B685C14000D37EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C93FC6AC2B685C21000D37EB /* RegisterionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 		C93FC6A72B685B95000D37EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C93FC6A92B685BFC000D37EB /* Authentication */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +170,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C93FC6A92B685BFC000D37EB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C93FC6AA2B685C14000D37EB /* LoginView.swift */,
+				C93FC6AC2B685C21000D37EB /* RegisterionView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +311,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93FC6AB2B685C14000D37EB /* LoginView.swift in Sources */,
 				C93FC67D2B685B36000D37EB /* ContentView.swift in Sources */,
+				C93FC6AD2B685C21000D37EB /* RegisterionView.swift in Sources */,
 				C93FC67B2B685B36000D37EB /* SwiftUI_Chat_ApplicationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
