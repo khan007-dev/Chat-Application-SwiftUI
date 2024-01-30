@@ -76,6 +76,7 @@ struct LoginView: View {
                 
                 NavigationLink {
                     RegisterionView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack {
                         Spacer()
