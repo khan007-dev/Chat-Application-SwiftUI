@@ -16,6 +16,7 @@
 		C93FC6982B685B38000D37EB /* SwiftUI_Chat_ApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6972B685B38000D37EB /* SwiftUI_Chat_ApplicationUITestsLaunchTests.swift */; };
 		C93FC6AB2B685C14000D37EB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6AA2B685C14000D37EB /* LoginView.swift */; };
 		C93FC6AD2B685C21000D37EB /* RegisterionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6AC2B685C21000D37EB /* RegisterionView.swift */; };
+		C9CFE79D2B69AD8200F12858 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE79C2B69AD8200F12858 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C93FC6972B685B38000D37EB /* SwiftUI_Chat_ApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Chat_ApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C93FC6AA2B685C14000D37EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C93FC6AC2B685C21000D37EB /* RegisterionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterionView.swift; sourceTree = "<group>"; };
+		C9CFE79C2B69AD8200F12858 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		C93FC6A42B685B8B000D37EB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C9CFE79C2B69AD8200F12858 /* CustomTextField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				C93FC67D2B685B36000D37EB /* ContentView.swift in Sources */,
 				C93FC6AD2B685C21000D37EB /* RegisterionView.swift in Sources */,
 				C93FC67B2B685B36000D37EB /* SwiftUI_Chat_ApplicationApp.swift in Sources */,
+				C9CFE79D2B69AD8200F12858 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
