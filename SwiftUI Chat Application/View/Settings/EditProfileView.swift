@@ -52,7 +52,7 @@ struct EditProfileView: View {
                         .foregroundStyle(.gray)
                         
                     
-                    NavigationLink(destination: Text("Edit Movie")) {
+                    NavigationLink(destination: StatusSelectorView()) {
                         HStack {
                             Text("At the Movie")
                                 .padding(8)

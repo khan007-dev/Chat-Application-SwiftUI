@@ -6,3 +6,25 @@
 //
 
 import Foundation
+enum StatusViewModel: Int, CaseIterable {
+    case notConfigured
+    case available
+    case busy
+    case school
+    case movies
+    case work
+    case meeting
+    
+    
+    var title: String {
+        switch self {
+        case .notConfigured: return "click here to update your status"
+        case .available: return "Available"
+        case .busy: return "Busy"
+        case .school: return "School"
+        case .movies: return "Movies"
+        case .work : return "Work"
+        case .meeting : return "Meeting"
+        }
+    }
+}

@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_Chat_ApplicationApp: App {
     var body: some Scene {
         WindowGroup {
-         MainTabView()
+        LoginView()
         }
     }
 }
