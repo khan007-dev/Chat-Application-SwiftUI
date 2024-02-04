@@ -11,6 +11,7 @@ struct EditProfileView: View {
     @State private var fullname = "Elin Brok"
     @State private var showImagePicker = false
     @State private var selectedImage : UIImage?
+    @State private var profileImage: Image?
     var body: some View {
        
         ZStack {
@@ -23,18 +24,29 @@ struct EditProfileView: View {
                 VStack (alignment: .leading) {
                     HStack {
                         VStack {
-                            Image(.profile1)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 48, height: 48)
-                                .clipShape(Circle())
+                            
+                            if let profileImage = profileImage {
+                                profileImage
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 48, height: 48)
+                                    .clipShape(Circle())
+                            } else  {
+                                
+                                Image(.profile1)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 48, height: 48)
+                                    .clipShape(Circle())
+                            }
+                            
                             Button(action: {
                                 
                                 showImagePicker.toggle()
                                 
                             }, label: {
                                 Text("Edit")
-                            }).sheet(isPresented: $showImagePicker, onDismiss: nil){
+                            }).sheet(isPresented: $showImagePicker, onDismiss: loadImage){
                                 
                                 ImagePicker(image: $selectedImage)
                             }
@@ -84,8 +96,15 @@ struct EditProfileView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Edit Profile")
         
-       
+     
     }
+    
+    func loadImage() {
+        
+        guard let selectedImage = selectedImage else {return}
+        profileImage = Image(uiImage: selectedImage)
+    }
+   
 }
 
 #Preview {
