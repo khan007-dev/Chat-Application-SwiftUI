@@ -6,7 +6,17 @@
 //
 
 import Foundation
-enum StatusViewModel: Int, CaseIterable {
+import SwiftUI
+
+class StatusViewModel: ObservableObject {
+    @Published var status: UserStatus = .notConfigured
+    
+    func updateStaus(_ stauts: UserStatus) {
+        self.status = stauts
+    }
+    
+}
+enum UserStatus: Int, CaseIterable {
     case notConfigured
     case available
     case busy
