@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct ConversationView: View {
-    @State private var showMessageView = false
+    @State private var shownewMessageView = false
+    @State private var showChatView = false
     var body: some View {
        
         ZStack (alignment: .bottomTrailing) {
+            
+            NavigationLink(destination: ChannelView(), isActive: $showChatView, label: {
+                
+            })
+
             
             ScrollView {
                 VStack (alignment: .leading) {
@@ -25,7 +31,7 @@ struct ConversationView: View {
             }
             
             Button(action: {
-                showMessageView.toggle()
+                shownewMessageView.toggle()
             }, label: {
                 Image(systemName: "square.and.pencil")
                     .resizable()
@@ -37,8 +43,8 @@ struct ConversationView: View {
             .foregroundStyle(.white)
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .padding()
-            .sheet(isPresented: $showMessageView, content: {
-                NewMessageView()
+            .sheet(isPresented: $shownewMessageView, content: {
+                NewMessageView(showChatView: $showChatView)
             })
         }
     }

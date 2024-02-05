@@ -26,6 +26,7 @@ struct UserCell: View {
                     Text("@log")
                         .font(.system(size: 15))
                 }
+                .foregroundStyle(.black)
                 Spacer()
             }
             .padding(.horizontal)
