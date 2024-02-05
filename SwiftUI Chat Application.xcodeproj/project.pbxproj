@@ -16,6 +16,7 @@
 		C93FC6982B685B38000D37EB /* SwiftUI_Chat_ApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6972B685B38000D37EB /* SwiftUI_Chat_ApplicationUITestsLaunchTests.swift */; };
 		C93FC6AB2B685C14000D37EB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6AA2B685C14000D37EB /* LoginView.swift */; };
 		C93FC6AD2B685C21000D37EB /* RegisterionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6AC2B685C21000D37EB /* RegisterionView.swift */; };
+		C97F0D082B712D5D00F1BB57 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F0D072B712D5D00F1BB57 /* ConversationCell.swift */; };
 		C9CFE79D2B69AD8200F12858 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE79C2B69AD8200F12858 /* CustomTextField.swift */; };
 		C9CFE7A02B6B86D000F12858 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE79F2B6B86D000F12858 /* MainTabView.swift */; };
 		C9CFE7A62B6B883C00F12858 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE7A52B6B883C00F12858 /* ChatsView.swift */; };
@@ -61,6 +62,7 @@
 		C93FC6972B685B38000D37EB /* SwiftUI_Chat_ApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Chat_ApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C93FC6AA2B685C14000D37EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C93FC6AC2B685C21000D37EB /* RegisterionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterionView.swift; sourceTree = "<group>"; };
+		C97F0D072B712D5D00F1BB57 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		C9CFE79C2B69AD8200F12858 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C9CFE79F2B6B86D000F12858 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C9CFE7A52B6B883C00F12858 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				C9CFE7AD2B6B888200F12858 /* ConversationView.swift */,
+				C97F0D072B712D5D00F1BB57 /* ConversationCell.swift */,
 			);
 			path = Conversation;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				C93FC67D2B685B36000D37EB /* ContentView.swift in Sources */,
 				C93FC6AD2B685C21000D37EB /* RegisterionView.swift in Sources */,
 				C93FC67B2B685B36000D37EB /* SwiftUI_Chat_ApplicationApp.swift in Sources */,
+				C97F0D082B712D5D00F1BB57 /* ConversationCell.swift in Sources */,
 				C9CFE79D2B69AD8200F12858 /* CustomTextField.swift in Sources */,
 				C9CFE7A02B6B86D000F12858 /* MainTabView.swift in Sources */,
 				C9CFE7AE2B6B888200F12858 /* ConversationView.swift in Sources */,

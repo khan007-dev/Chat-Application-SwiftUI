@@ -9,25 +9,31 @@ import SwiftUI
 
 struct ConversationCell: View {
     var body: some View {
-        HStack {
-            // image
-            Image(.profile1)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 48, height: 48)
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-            // user Info
-            
-            VStack (alignment: .leading) {
-                Text("Sarah log".uppercased())
-                    .font(.system(size: 14, weight: .semibold))
+        VStack {
+            HStack {
+                // image
+                Image(.profile1)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 48, height: 48)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                // user Info
                 
-                
+                VStack (alignment: .leading) {
+                    Text("Sarah log".uppercased())
+                        .font(.system(size: 14, weight: .semibold))
+                    
+                    Text("This is some test message for now")
+                        .font(.system(size: 15))
+                }
+                Spacer()
             }
-        }
+            .padding(.horizontal)
+            Divider()
+        }.padding(.top)
     }
 }
 
 #Preview {
-    UserCell()
+    ConversationCell()
 }
