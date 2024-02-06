@@ -23,7 +23,9 @@ struct ConversationView: View {
                 VStack (alignment: .leading) {
                
                     ForEach((0...10), id: \.self) { _ in
-                    ConversationCell()
+                        NavigationLink(destination: ChatsView()) {
+                            ConversationCell()
+                        }
                             
                     }
                     

@@ -15,7 +15,7 @@ struct MainTabView: View {
         NavigationView {
             
             TabView (selection: $selectedIndex) {
-                ChatsView()
+                ConversationView()
                     .tabItem {
                         Image(systemName: "bubble.left")
                     }
