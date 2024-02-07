@@ -14,6 +14,7 @@ struct RegisterionView: View {
     @State private var fullname = ""
     @State private var username = ""
     @Environment(\.presentationMode) var mode
+    @ObservedObject var viewModel = AuthViewModel()
     var body: some View {
         
         VStack {
@@ -36,11 +37,11 @@ struct RegisterionView: View {
                     
                     CustomTextField(imageName: "envelope", placeHolder: "Email", isSecureField: false, text: $email)
                    
-                    CustomTextField(imageName: "person", placeHolder: "password", isSecureField: true, text: $password)
+                    CustomTextField(imageName: "person", placeHolder: "Username", isSecureField: false, text: $password)
                     
-                    CustomTextField(imageName: "person", placeHolder: "UserName", isSecureField: false, text: $username)
+                    CustomTextField(imageName: "person", placeHolder: "Full Name", isSecureField: false, text: $username)
                     
-                    CustomTextField(imageName: "lock", placeHolder: "FullName", isSecureField: false, text: $fullname)
+                    CustomTextField(imageName: "lock", placeHolder: "Password", isSecureField: true, text: $fullname)
                     
                     
                  
@@ -49,7 +50,7 @@ struct RegisterionView: View {
                 
              
                 Button {
-                    
+                    viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
                 } label: {
                     Text("Sign Up")
                         .font(.headline)
