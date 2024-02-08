@@ -22,7 +22,17 @@ class AuthViewModel: NSObject, ObservableObject {
                 return
             }
             
-            print("Successfull register user with firebase")
+            
+            guard let user = result?.user else {return}
+            
+            let data: [String: Any] = [ "email": email, "username": username, "fullnamee": fullname]
+            
+            Firestore.firestore().collection("users").document(user.uid)
+                .setData(data) { _ in
+                
+                    print("DEBUG: Successfully updated user info")
+                }
+            
         }
     }
     

@@ -55,6 +55,7 @@
 		C97F0DC32B735B3200F1BB57 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C97F0DC22B735B3200F1BB57 /* FirebaseStorage */; };
 		C97F0DC52B735B3200F1BB57 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C97F0DC42B735B3200F1BB57 /* FirebaseStorageCombine-Community */; };
 		C97F0DC72B735DCA00F1BB57 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F0DC62B735DCA00F1BB57 /* AuthViewModel.swift */; };
+		C97F0DCB2B74CE3500F1BB57 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F0DCA2B74CE3500F1BB57 /* ProfilePhotoSelectorView.swift */; };
 		C9CFE79D2B69AD8200F12858 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE79C2B69AD8200F12858 /* CustomTextField.swift */; };
 		C9CFE7A02B6B86D000F12858 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE79F2B6B86D000F12858 /* MainTabView.swift */; };
 		C9CFE7A62B6B883C00F12858 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE7A52B6B883C00F12858 /* ChatsView.swift */; };
@@ -113,6 +114,7 @@
 		C97F0D8B2B73568A00F1BB57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C97F0D8E2B73587F00F1BB57 /* SwiftUI-Chat-Application-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-Chat-Application-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C97F0DC62B735DCA00F1BB57 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		C97F0DCA2B74CE3500F1BB57 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		C9CFE79C2B69AD8200F12858 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C9CFE79F2B6B86D000F12858 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C9CFE7A52B6B883C00F12858 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 			children = (
 				C93FC6AA2B685C14000D37EB /* LoginView.swift */,
 				C93FC6AC2B685C21000D37EB /* RegisterionView.swift */,
+				C97F0DCA2B74CE3500F1BB57 /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				C93FC67D2B685B36000D37EB /* ContentView.swift in Sources */,
 				C97F0D0E2B713CB900F1BB57 /* SearchBar.swift in Sources */,
 				C97F0D102B713F6A00F1BB57 /* Extension.swift in Sources */,
+				C97F0DCB2B74CE3500F1BB57 /* ProfilePhotoSelectorView.swift in Sources */,
 				C97F0D4C2B720C8200F1BB57 /* CustomInputView.swift in Sources */,
 				C93FC6AD2B685C21000D37EB /* RegisterionView.swift in Sources */,
 				C93FC67B2B685B36000D37EB /* SwiftUI_Chat_ApplicationApp.swift in Sources */,

@@ -8,8 +8,66 @@
 import SwiftUI
 
 struct ProfilePhotoSelectorView: View {
+    @State private var imagePickerPresented = false
+    @State private var selectedImage : UIImage?
+    @State private var profileImage: Image?
+//    @EnvironmentObject var viewModel: AuthViewModel
+    @ObservedObject var viewModel = AuthViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       
+        VStack  {
+            Button {
+                imagePickerPresented.toggle()
+            } label: {
+                
+                if let profileImage = profileImage {
+                    profileImage
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 180, height: 180)
+                        .clipShape(Circle())
+                }
+                else
+                {
+                    Image(.profile1)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 180, height: 180)
+                        .clipShape(Circle())
+                        .padding(.top, 44)
+                        .foregroundStyle(.black)
+                }
+            }
+            .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                ImagePicker(image: $selectedImage)
+            })
+            
+            Text(profileImage == nil ? "Select a profile image" : "Great! Tap below to continue")
+                .font(.system(size: 20, weight: .semibold))
+            
+            if profileImage != nil {
+                Button(action: {
+                    viewModel.uploadProfileImage()
+                    
+                }, label: {
+                    Text("Upload")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                        .frame(width: 340, height: 50)
+                        .background(Color.blue)
+                        .clipShape(Rectangle())
+                        .cornerRadius(12)
+                        .padding()
+                })       .shadow(color: .gray, radius: 10)
+            }
+            Spacer()
+        }
+    }
+    
+    func loadImage() {
+        guard let selectedImage = selectedImage else {return}
+        profileImage = Image(uiImage: selectedImage)
     }
 }
 
