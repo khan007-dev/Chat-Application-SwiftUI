@@ -62,7 +62,7 @@ struct ProfilePhotoSelectorView: View {
                 })       .shadow(color: .gray, radius: 10)
             }
             Spacer()
-        }
+        }.navigationBarBackButtonHidden(true)
     }
     
     func loadImage() {

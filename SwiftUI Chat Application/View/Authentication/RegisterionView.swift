@@ -19,6 +19,10 @@ struct RegisterionView: View {
         
         VStack {
             
+            NavigationLink(destination: ProfilePhotoSelectorView(), isActive: $viewModel.didAuthenticateUser, label: {
+                
+            })
+            
             VStack (alignment: .leading, spacing: 12) {
                 
                 HStack { Spacer() }
@@ -37,11 +41,11 @@ struct RegisterionView: View {
                     
                     CustomTextField(imageName: "envelope", placeHolder: "Email", isSecureField: false, text: $email)
                    
-                    CustomTextField(imageName: "person", placeHolder: "Username", isSecureField: false, text: $password)
+                    CustomTextField(imageName: "person", placeHolder: "Username", isSecureField: false, text: $username)
                     
-                    CustomTextField(imageName: "person", placeHolder: "Full Name", isSecureField: false, text: $username)
+                    CustomTextField(imageName: "person", placeHolder: "Full Name", isSecureField: false, text: $fullname)
                     
-                    CustomTextField(imageName: "lock", placeHolder: "Password", isSecureField: true, text: $fullname)
+                    CustomTextField(imageName: "lock", placeHolder: "Password", isSecureField: true, text: $password)
                     
                     
                  
