@@ -12,7 +12,7 @@ struct ProfilePhotoSelectorView: View {
     @State private var selectedImage : UIImage?
     @State private var profileImage: Image?
 //    @EnvironmentObject var viewModel: AuthViewModel
-    @ObservedObject var viewModel = AuthViewModel()
+    @EnvironmentObject var viewModel : AuthViewModel
     
     var body: some View {
        
@@ -46,12 +46,12 @@ struct ProfilePhotoSelectorView: View {
             Text(profileImage == nil ? "Select a profile image" : "Great! Tap below to continue")
                 .font(.system(size: 20, weight: .semibold))
             
-            if profileImage != nil {
+            if let image = selectedImage {
                 Button(action: {
-                    viewModel.uploadProfileImage()
+                    viewModel.uploadProfileImage(image)
                     
                 }, label: {
-                    Text("Upload")
+                    Text("Continue")
                         .font(.headline)
                         .foregroundStyle(.white)
                         .frame(width: 340, height: 50)
