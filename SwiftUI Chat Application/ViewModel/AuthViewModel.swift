@@ -10,9 +10,26 @@ import Firebase
 import UIKit
 class AuthViewModel: NSObject, ObservableObject {
     @Published var didAuthenticateUser = false
+    @Published var userSession: FirebaseAuth.User?
     private var tempCurrentUser: FirebaseAuth.User?
-    func login(){
-        print("login from view model")
+    
+    static let shared = AuthViewModel()
+    override init() {
+        userSession = Auth.auth().currentUser
+    }
+    func login(withEmail email: String, password: String){
+     
+        Auth.auth().signIn(withEmail: email, password: password) {
+            result, error in
+            
+            if let error = error {
+                print("Failed \(error.localizedDescription)")
+                return
+            }
+            
+            self.userSession = result?.user
+            
+        }
     }
     
     func register(withEmail email: String, password: String, fullname: String, username: String) {
@@ -53,5 +70,7 @@ class AuthViewModel: NSObject, ObservableObject {
     
     func signOut(){
         
+        self.userSession = nil
+        try? Auth.auth().signOut()
     }
 }
