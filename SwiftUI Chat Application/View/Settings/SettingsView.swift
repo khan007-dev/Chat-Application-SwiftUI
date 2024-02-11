@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var selectedIndex = 0
     @EnvironmentObject var authViewModel: AuthViewModel
+     let user: User
+    init(user: User) {
+        self.user = user
+    }
+    
     var body: some View {
         
         ZStack {
@@ -17,8 +23,10 @@ struct SettingsView: View {
             
             VStack (spacing: 32) {
               
-                NavigationLink(destination: EditProfileView()) {
-                    SettingsHeader()
+                
+                NavigationLink (destination: EditProfileView()) {
+                  //  SettingsHeader(user: user)
+                    SettingsHeader(user: user)
                 }
 
              
@@ -48,8 +56,5 @@ struct SettingsView: View {
     }
 }
 
-#Preview {
-    SettingsView()
-}
 
 

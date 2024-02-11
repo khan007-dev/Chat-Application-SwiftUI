@@ -6,14 +6,21 @@
 //
 
 import Foundation
+import Kingfisher
 import SwiftUI
 
 struct SettingsHeader: View {
+    
+    private let user: User
+    
+    init(user: User) {
+        self.user = user
+    }
     var body: some View {
         VStack (spacing: 32){
             HStack {
                 
-                Image(.profile1)
+                KFImage(URL(string: user.profileImageUrl))
                     .resizable()
                     .scaledToFit()
                     .frame(width: 64, height: 64)

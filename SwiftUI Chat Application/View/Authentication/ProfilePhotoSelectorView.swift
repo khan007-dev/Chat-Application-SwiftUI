@@ -11,7 +11,6 @@ struct ProfilePhotoSelectorView: View {
     @State private var imagePickerPresented = false
     @State private var selectedImage : UIImage?
     @State private var profileImage: Image?
-//    @EnvironmentObject var viewModel: AuthViewModel
     @EnvironmentObject var viewModel : AuthViewModel
     
     var body: some View {

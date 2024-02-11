@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
+
+
+struct User: Identifiable, Decodable {
+    @DocumentID var id: String?
+    let username: String
+    let fullnamee: String
+    let email: String
+    let profileImageUrl: String
+
+ 
+    
+}
