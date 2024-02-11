@@ -29,17 +29,18 @@ struct MainTabView: View {
                             Image(systemName: "bubble.left.and.bubble.right")
                         }.tag(1)
                     SettingsView(user: user)
+                  
                     
                         .tabItem {
                             Image(systemName: "gear")
                         }.tag(2)
                 }.navigationTitle(tabTitle)
             }
-            //        } else  {
-            //
+                    } else  {
+            
                     }
             
-//        }
+        }
         
         var tabTitle:  String {
             switch  selectedIndex {
@@ -51,5 +52,5 @@ struct MainTabView: View {
             
         }
     }
-}
+
 

@@ -59,6 +59,8 @@
 		C97F0E8C2B76278E00F1BB57 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F0E8B2B76278E00F1BB57 /* ImageUploader.swift */; };
 		C97F0E8E2B78E6AC00F1BB57 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F0E8D2B78E6AC00F1BB57 /* User.swift */; };
 		C97F0E912B78FBE600F1BB57 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C97F0E902B78FBE600F1BB57 /* Kingfisher */; };
+		C97F0E932B7929B800F1BB57 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F0E922B7929B800F1BB57 /* NewMessageViewModel.swift */; };
+		C97F0E952B792A2D00F1BB57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F0E942B792A2D00F1BB57 /* Constants.swift */; };
 		C9CFE79D2B69AD8200F12858 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE79C2B69AD8200F12858 /* CustomTextField.swift */; };
 		C9CFE7A02B6B86D000F12858 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE79F2B6B86D000F12858 /* MainTabView.swift */; };
 		C9CFE7A62B6B883C00F12858 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CFE7A52B6B883C00F12858 /* ChatsView.swift */; };
@@ -120,6 +122,8 @@
 		C97F0DCA2B74CE3500F1BB57 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		C97F0E8B2B76278E00F1BB57 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		C97F0E8D2B78E6AC00F1BB57 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C97F0E922B7929B800F1BB57 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
+		C97F0E942B792A2D00F1BB57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C9CFE79C2B69AD8200F12858 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C9CFE79F2B6B86D000F12858 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C9CFE7A52B6B883C00F12858 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 				C9CFE8C12B6F9B5600F12858 /* ImagePicker.swift */,
 				C97F0D0D2B713CB900F1BB57 /* SearchBar.swift */,
 				C97F0D0F2B713F6A00F1BB57 /* Extension.swift */,
+				C97F0E942B792A2D00F1BB57 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				C9CFE8BF2B6F90BE00F12858 /* UserStatus.swift */,
 				C97F0D892B72F29100F1BB57 /* ChatViewModel.swift */,
 				C97F0DC62B735DCA00F1BB57 /* AuthViewModel.swift */,
+				C97F0E922B7929B800F1BB57 /* NewMessageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -539,6 +545,7 @@
 				C9CFE8C02B6F90BE00F12858 /* UserStatus.swift in Sources */,
 				C9CFE8AE2B6CE7E100F12858 /* EditProfileView.swift in Sources */,
 				C97F0D0A2B71312A00F1BB57 /* NewMessageView.swift in Sources */,
+				C97F0E932B7929B800F1BB57 /* NewMessageViewModel.swift in Sources */,
 				C9CFE8BE2B6F89AD00F12858 /* StatusSelectorView.swift in Sources */,
 				C97F0E8E2B78E6AC00F1BB57 /* User.swift in Sources */,
 				C9CFE8C22B6F9B5600F12858 /* ImagePicker.swift in Sources */,
@@ -558,6 +565,7 @@
 				C93FC67D2B685B36000D37EB /* ContentView.swift in Sources */,
 				C97F0D0E2B713CB900F1BB57 /* SearchBar.swift in Sources */,
 				C97F0D102B713F6A00F1BB57 /* Extension.swift in Sources */,
+				C97F0E952B792A2D00F1BB57 /* Constants.swift in Sources */,
 				C97F0DCB2B74CE3500F1BB57 /* ProfilePhotoSelectorView.swift in Sources */,
 				C97F0D4C2B720C8200F1BB57 /* CustomInputView.swift in Sources */,
 				C93FC6AD2B685C21000D37EB /* RegisterionView.swift in Sources */,

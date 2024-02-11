@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var selectedIndex = 0
+    //@State private var selectedIndex = 0
     @EnvironmentObject var authViewModel: AuthViewModel
-     let user: User
+    
+    let user: User
     init(user: User) {
         self.user = user
     }
